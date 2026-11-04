@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1500" viewBox="0 0 1680 1500"><rect width="100%" height="100%" fill="#f8fafc"/><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#64748b"/></marker></defs>
+<text x="840" y="48" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="40" font-weight="700" fill="#0f172a">FashionMirror AI</text>
+<text x="840" y="94" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#475569">Natural-language shopping + automatic personalized previews</text>
+<polyline points="840,245 840,300" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="990" y="271" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Search bar: direct query</text>
+<polyline points="650,220 280,300" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="425" y="246" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Chat</text>
+<polyline points="490,362 630,362" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="560" y="341" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Tool call</text>
+<polyline points="1050,362 1190,362" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1120" y="341" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">MCP</text>
+<polyline points="1190,385 1050,385" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="840,425 840,500" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="902" y="463" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Results</text>
+<polyline points="1200,590 1050,590" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="280,630 280,700" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="490,765 630,765" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="560" y="741" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Assessment</text>
+<polyline points="840,630 840,700" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="945" y="661" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Page products</text>
+<polyline points="1050,765 1190,765" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1120" y="741" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Skip</text>
+<polyline points="840,840 840,910" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="902" y="870" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Eligible</text>
+<polyline points="1050,980 1190,980" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1120" y="953" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Photo + garment</text>
+<polyline points="1400,1040 1400,1080 1020,1080 1020,1130" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="630,1190 490,1190" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="560" y="1164" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Feedback</text>
+<polyline points="840,1040 840,1130" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="909" y="1080" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#475569">Job state</text>
+<rect x="630" y="140" width="420" height="105" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="840.0" y="170" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Storefront</text>
+<text x="840.0" y="203" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Next.js / TypeScript / Tailwind</text>
+<text x="840.0" y="229" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Search, chat, upload and zoom</text>
+<rect x="70" y="300" width="420" height="125" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="280.0" y="330" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Muse Spark 1.3</text>
+<text x="280.0" y="363" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Conversation and search context</text>
+<text x="280.0" y="389" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Query + optional price, size, colour</text>
+<rect x="630" y="300" width="420" height="125" rx="18" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+<text x="840.0" y="330" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">FastAPI Backend</text>
+<text x="840.0" y="363" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Session ownership / validation</text>
+<text x="840.0" y="389" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Private credentials / MCP tools</text>
+<rect x="1190" y="300" width="420" height="125" rx="18" fill="#ecfccb" stroke="#65a30d" stroke-width="2"/>
+<text x="1400.0" y="330" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Shopify Global Catalog</text>
+<text x="1400.0" y="363" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">search_catalog / lookup_catalog</text>
+<text x="1400.0" y="389" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">get_product / real merchant data</text>
+<rect x="630" y="500" width="420" height="130" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="840.0" y="530" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Product Grid</text>
+<text x="840.0" y="563" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Up to 10 products per page</text>
+<text x="840.0" y="589" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Original + personalized image</text>
+<text x="840.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Cursor pagination retains filters</text>
+<rect x="1190" y="500" width="420" height="130" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="1400.0" y="530" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Garment Classification</text>
+<text x="1400.0" y="563" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Muse Spark 1.3 during search</text>
+<text x="1400.0" y="589" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Only when category is missing</text>
+<text x="1400.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Results cached per session</text>
+<rect x="70" y="500" width="420" height="130" rx="18" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+<text x="280.0" y="530" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Photo Upload</text>
+<text x="280.0" y="563" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">User selects clothing department</text>
+<text x="280.0" y="589" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Size / resolution / image checks</text>
+<text x="280.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Normalize and store privately</text>
+<rect x="70" y="700" width="420" height="140" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="280.0" y="730" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Photo Assessment</text>
+<text x="280.0" y="763" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Muse Spark 1.3</text>
+<text x="280.0" y="789" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Main subject / face / visible areas</text>
+<text x="280.0" y="815" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Same-photo assessment reused</text>
+<rect x="630" y="700" width="420" height="140" rx="18" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+<text x="840.0" y="730" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Preview Eligibility</text>
+<text x="840.0" y="763" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Department + garment category</text>
+<text x="840.0" y="789" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Required body areas visible</text>
+<text x="840.0" y="815" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Photo assessment must be ready</text>
+<rect x="1190" y="700" width="420" height="140" rx="18" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+<text x="1400.0" y="730" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Preview Skipped</text>
+<text x="1400.0" y="763" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Unsupported / excluded garment</text>
+<text x="1400.0" y="789" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Incompatible or unsuitable photo</text>
+<text x="1400.0" y="815" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Reason displayed in product card</text>
+<rect x="630" y="910" width="420" height="130" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="840.0" y="940" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Automatic Batch Queue</text>
+<text x="840.0" y="973" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Up to 10 product IDs per batch</text>
+<text x="840.0" y="999" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">3 concurrent generations globally</text>
+<text x="840.0" y="1025" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">100 attempts / session / hour</text>
+<rect x="1190" y="910" width="420" height="130" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="1400.0" y="940" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Muse Image 1.0</text>
+<text x="1400.0" y="973" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">One image-edit call per product</text>
+<text x="1400.0" y="999" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Eligibility rechecked before call</text>
+<text x="1400.0" y="1025" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Generated-image URL or error</text>
+<rect x="630" y="1130" width="420" height="130" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="840.0" y="1160" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Per-Product Status</text>
+<text x="840.0" y="1193" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Frontend polls preview job</text>
+<text x="840.0" y="1219" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Loading / completed / failed</text>
+<text x="840.0" y="1245" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Zoom and manual retry</text>
+<rect x="70" y="1130" width="420" height="130" rx="18" fill="#fce7f3" stroke="#db2777" stroke-width="2"/>
+<text x="280.0" y="1160" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Feedback CSV</text>
+<text x="280.0" y="1193" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Like / dislike / preset reason</text>
+<text x="280.0" y="1219" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Timestamp + job and product IDs</text>
+<text x="280.0" y="1245" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Product + generated-image URLs</text>
+<rect x="1190" y="1130" width="420" height="130" rx="18" fill="#fce7f3" stroke="#db2777" stroke-width="2"/>
+<text x="1400.0" y="1160" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">Evaluation CSV / Report</text>
+<text x="1400.0" y="1193" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Provider + API + job metrics</text>
+<text x="1400.0" y="1219" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Latency / queue wait / outcomes</text>
+<text x="1400.0" y="1245" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#0f172a">Provider-reported token usage</text>
+<text x="840" y="1325" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#0f172a">Planned hosting: Vercel frontend  ---&gt;  HTTPS Docker backend  ---&gt;  Shopify + Meta</text>
+<text x="840" y="1370" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">One backend worker. Sessions, jobs and quotas are in memory; photos and CSVs need persistent storage.</text>
+<text x="840" y="1407" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">The generation quota counts retries; reused and eligibility-blocked previews do not consume it.</text>
+<text x="840" y="1444" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">Evaluation observes provider calls, API requests and jobs throughout the pipeline.</text>
+</svg>

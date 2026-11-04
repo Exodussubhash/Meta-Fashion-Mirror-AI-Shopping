@@ -22,30 +22,64 @@ A fashion storefront that finds real Shopify products and automatically shows pe
 ## Architecture
 
 ```text
-Browser: Next.js storefront
+Next.js storefront
   |
-  +--- Search / chat ----------> FastAPI backend
-  |                                |
-  |                                +--- Muse Spark: conversational search query
-  |                                +--- Shopify Global Catalog MCP
-  |                                     search_catalog / lookup_catalog / get_product
-  |                                |
-  |<--- Up to 10 products + pagination cursor
+  +--- Search bar --------------------------+
+  |    Direct catalogue query               |
+  |                                        v
+  +--- Chat ---> Muse Spark 1.3 ------> FastAPI search pipeline
+  |              Query + optional           |
+  |              price / size / colour      +--- Shopify Global Catalog MCP
+  |              filters + chat context          search_catalog / lookup_catalog / get_product
+  |                                        |
+  |<--- Up to 10 products + cursor ----------+
+  |     Filters retained during pagination
   |
-  +--- Upload photo -----------> Photo assessment (Muse Spark)
-  |                                |
-  +--- Displayed products -----> Preview validation / garment classification
-  |                                |
-  |                                +--- Async preview queue (3 concurrent jobs)
-  |                                     |
-  |                                     +--- Muse Image: photo + garment image
-  |                                |
-  |<--- Poll job status --------+--- Generated preview URL
+  +--- Photo + chosen department ---> Upload validation / normalization
+  |                                        |
+  |                                  Muse Spark photo assessment
+  |                                  Reused for same photo in session
+  |
+  +--- Displayed page ---> Batch: up to 10 product IDs
+  |                            |
+  |                       Preview eligibility checks
+  |                       Department / garment / visible body areas
+  |                       Missing category? Muse Spark classification
+  |                       (during product search, cached per session)
+  |                            |
+  |                       Async job queue
+  |                       3 generations concurrently across users
+  |                       Recheck eligibility + photo before generation
+  |                       100 attempts per session / rolling hour
+  |                            |
+  |                       Muse Image 1.0
+  |                       User photo + selected product image
+  |                            |
+  |<--- Poll job status -------+--- Generated-image URL / failure / skip
+  |     Per-product loading, zoom and manual retry
   |
   +--- Like / dislike / reason ---> feedback.csv
+                                   Timestamp + job/product IDs + URLs
 
-Backend provider timings / usage ---> evaluation.csv ---> Evaluation report
+Provider calls / API requests / jobs ---> evaluation.csv ---> Report
+Session tokens ---> Ownership checks on private session routes
+Sessions / chat / products / jobs / quotas ---> In-memory state (one worker)
+Uploaded photos / feedback / metrics ---> Private data directory
 ```
+
+### Planned deployment
+
+```text
+Browser ---> Vercel (Next.js frontend)
+    |
+    +------> HTTPS backend host (FastAPI Docker container, one worker)
+                  |
+                  +--- Shopify Global Catalog MCP
+                  +--- Meta APIs: Muse Spark / Muse Image
+                  +--- Persistent volume: photos and CSV files
+```
+
+API keys stay in the backend. Session tokens scope access to previews and feedback; uploaded photos have no public serving route. Per-session quotas are implemented. Invite-only access, session-creation/API rate limits and a global usage cap remain deployment hardening tasks. The diagram describes the intended hosting layout; it does not claim the app is already deployed.
 
 ## Run locally
 
@@ -168,11 +202,18 @@ Filter format follows the official [Shopify search guide](https://shop.dev/docs/
 
 ## Current MVP limitations
 
-- The MVP runs with one backend worker. Sessions, search context and preview jobs are held in memory and reset when the backend restarts.
-- Photo suitability and garment checks skip unsupported previews. Image generation requires a configured provider; otherwise, the app shows “Preview unavailable.”
-- Preview generation uses paid Meta APIs. Requests already submitted may continue after the user navigates to another page.
-- Previews illustrate appearance rather than exact fit. Facial identity, garment colour and anatomy can vary. Collected feedback supports future evaluation but is not a validated quality benchmark.
-- Purchases are completed on the merchant's website. The frontend supports Vercel deployment and the backend is Docker-ready; hosting must be configured separately.
+- One backend worker; in-memory sessions, chat history and jobs reset on restart.
+- Each page displays up to 10 products and automatically submits them as a batch of up to 10 product IDs.
+- Eligible products generate individually: 3 run concurrently while the remaining jobs wait in the queue.
+- Each generated preview uses a separate model call; the batch is coordinated by the backend, not one model request for 10 images.
+- 100 generation attempts per session per rolling hour; retries count, cached and blocked previews do not.
+- The hourly quota resets on restart. It is not an account-wide or global spending cap.
+- Submitted generation requests may continue after navigation and incur API charges.
+- Unsuitable photos, unsupported garments or a missing provider can prevent previews.
+- Generated-image URLs may expire. Photos and CSV files need persistent storage when deployed.
+- Preview identity, colour, anatomy and fit can vary; exact sizing is not guaranteed.
+- Feedback is user preference data, not a validated quality benchmark.
+- Checkout happens on merchant websites; public hosting must be configured separately.
 
 ## Next steps
 
