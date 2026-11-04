@@ -1,0 +1,6 @@
+operation,model_or_service,attempts,successful,mean_latency_ms,mean_latency_seconds
+Shopify catalogue search,Shopify MCP,4,4,514.818,0.515
+Conversational search,muse-spark-1.3,1,1,5552.041,5.552
+Photo assessment,muse-spark-1.3,1,1,8664.159,8.664
+Garment classification,muse-spark-1.3,2,2,8705.766,8.706
+Image generation,muse-image-1.0,26,20,14068.168,14.068
