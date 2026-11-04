@@ -2,7 +2,18 @@
 
 A fashion storefront that finds real Shopify products and automatically shows personalized previews beside the original product photos. Each page displays up to 10 products.
 
-**Stack:** Next.js · TypeScript · Tailwind CSS · FastAPI · Python · Shopify Global Catalog MCP · Docker backend · Vercel frontend
+## Tech stack
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Shopify MCP](https://img.shields.io/badge/Shopify_MCP-7AB55C?style=for-the-badge&logo=shopify&logoColor=white)
+![Muse Spark 1.3](https://img.shields.io/badge/Muse_Spark_1.3-0866FF?style=for-the-badge&logo=meta&logoColor=white)
+![Muse Image 1.0](https://img.shields.io/badge/Muse_Image_1.0-8B5CF6?style=for-the-badge&logo=meta&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 **Models:**
 - `muse-spark-1.3`: conversational search, photo suitability assessment and classification of garments with missing category metadata.
