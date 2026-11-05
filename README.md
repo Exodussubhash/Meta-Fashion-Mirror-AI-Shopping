@@ -147,6 +147,14 @@ A preview is skipped or unavailable when:
 
 Checks run before jobs are queued and again before generation. Replacing or removing the photo invalidates queued previews. Provider errors or timeouts show a failed preview with a retry option; a failed generation is different from an eligibility skip.
 
+### What garment classification does
+
+Garment classification identifies the product type so the backend can decide whether it can proceed to Muse Image for a personalized preview or must be skipped. It is one input to preview eligibility, alongside the selected clothing department and the uploaded photo assessment.
+
+The backend groups products as `top`, `outerwear`, `bottom`, `dress`, `footwear`, `underwear` or `unknown`. It first reads Shopify category/product-type metadata. When the group remains unknown, a ready photo and configured image provider enable one batched, text-only Muse Spark request for the current page's unclassified products, using their titles and descriptions. Results are cached per session by product ID and text content.
+
+The group determines which body areas must be visible: tops/jackets need the upper body, bottoms need the lower body, dresses need both, and shoes need visible feet. Underwear is excluded; unknown groups are skipped. This classifies the product type, not the person's gender, size or fit.
+
 ## Search and chat
 
 Both accept natural-language fashion requests describing garment type, colour, material, size, style or budget. Examples:
@@ -222,3 +230,7 @@ Filter format follows the official [Shopify search guide](https://shop.dev/docs/
 - **More natural lighting:** Adapt the preview to the shopper's photo lighting while preserving the product's colour and texture.
 - **Saved photo profiles:** With the user's consent, securely save uploaded photos to their account so they can return without uploading again. Let them replace or delete photos at any time.
 - **A more personal shopping experience:** Remember preferred sizes, styles and saved products, and let shoppers choose separate photo profiles when shopping for someone else.
+
+## Deployment guide
+
+See [Vercel + Render deployment steps](docs/deployment.md) for frontend/backend settings, secrets, storage and live verification.

@@ -10,3 +10,5 @@ backend/data/
 
 .pytest_cache/
 *.tsbuildinfo
+
+.vercel/
